@@ -41,11 +41,11 @@ public class SeleniumExample {
         String imageString = scanner.nextLine();
         driver.findElement(By.name("imagestring")).sendKeys(imageString);
         driver.findElement(By.xpath("//*[@id=\"nav_block\"]/form[2]/table/tbody/tr[10]/td/input[1]")).click();
-
-        if (!driver.getCurrentUrl().equals("https://www.nicept.net/index.php")){
-            System.out.println("登录出错重新登录");
-            driver.get("https://www.nicept.net");
-        }
+//
+//        if (!driver.getCurrentUrl().equals("https://www.nicept.net/index.php")){
+//            System.out.println("登录出错重新登录");
+//            driver.get("https://www.nicept.net");
+//        }
 
         Thread.sleep(2000);
         //随机生成停顿时间3-5秒
